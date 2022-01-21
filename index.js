@@ -41,9 +41,5 @@ app.get("/timestamp",(request, response)=>{
                    </div>`);
                    });
 
-app.get('/timestamp1' , (req, res) => {
-    let date = new Date(timeStamp).getHours()
-    res.send(`<h1> ${date} ${Hrs}<h1>`)
-})
 
 app.listen(port,()=>console.log("server started at",port));
